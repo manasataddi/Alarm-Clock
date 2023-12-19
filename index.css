@@ -1,0 +1,35 @@
+body {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-Aesthetic-Plain-Backgrounds-HD.jpg");
+    background-size: cover;
+    font-weight: bold;
+    text-align: center;
+    color:whitesmoke !important;
+    text-shadow: 2px 2px 4px #5922be;
+    background-position: center bottom;
+}
+
+.alarmTable {
+    margin: 0 auto;
+}
+
+.invisibleButton {
+    background: transparent;
+    border: none !important;
+    padding-bottom: 0%;
+}
+
+.timeText {
+    text-align: center;
+    padding-top: 0px;
+    
+}
+
+.AMPMRadio {
+    padding-left: 1rem;
+}
+
+#PMRadio, #AMRadio {
+    accent-color: #cdb4db;
+    background-color: #cdb4db;
+    border-color: #5e548e;
+}

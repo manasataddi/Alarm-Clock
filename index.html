@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Alarm Clock</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body  class="text-center position-absolute top-50 start-50 translate-middle">
+        <h1 id="day-el"></h1>
+        <h1 id="time-el"></h1>
+        </br>
+        <table class="alarmTable"> 
+            <tr>
+                <td>
+                    <button class="invisibleButton" onclick="decrementHour()">▲</button>
+                </td>
+                <td></td>
+                <td>
+                    <button class="invisibleButton" onclick="decrementMinute() ">▲</button>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="timeText" id="hour-el">07</td>
+                <td class="timeText">:</td>
+                <td class="timeText" id="minute-el">30</td>
+                <td>
+                    <div class="AMPMRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="ampmRadio" id="AMRadio" value="isAM" checked>
+                            <label class="form-check-label" for="AMRadios">
+                            AM
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="ampmRadio" id="PMRadio" value="isPM">
+                            <label class="form-check-label" for="PMRadios">
+                            PM
+                            </label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="invisibleButton" onclick="incrementHour()">▼</button>
+                </td>
+                <td></td>
+                <td>
+                    <button class="invisibleButton" onclick="incrementMinute()">▼</button>
+                </td>
+                <td></td>  
+            </tr>
+        </table>
+        </br>
+        <h2>Sleep time:</h2>
+        <h2 id="sleeptime-el"></h2>
+    </body>
+    <script src="index.js"></script>
+</html>
